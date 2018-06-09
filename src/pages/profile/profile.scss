@@ -1,0 +1,62 @@
+.ion-page .toolbar-background-md{
+    background: rgba(51, 119, 155, 1);
+    color: rgba(10, 10, 10, 1);
+}
+
+.ion-page .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+    color: white;
+}
+
+.ion-page .toolbar-title-md{
+    color: white;
+}
+
+.avatar {
+    /* background-size: contain; */
+    border-radius: 50%;
+    border: 10px solid white;
+    /* height: 71px; */
+    /* left: 9px; */
+    // position: absolute;
+    position: absolute;
+    top: 8%;
+    /* width: 71px; */
+    -webkit-transform-origin: 50% 100%;
+    nsform-origin: 50% 100%;
+    margin-left: 33%;
+    margin-right: 33%;
+    width: 34%;
+}
+
+.avatar::after {
+    content: "Gaviria";
+    position: absolute;
+    top: calc(50% + 2.7em);
+    left: calc(50% - 1.6em);
+    font-size: 2em;
+    cursor: text;
+  }
+
+.drop {
+    height: 120px;
+    position: sticky;
+    top: -71px;
+    width: 100%;
+}
+
+.image {
+    // background-image: url(img1.jpg);
+    background-position-y: -66px;
+    background-size: 100%;
+    margin-top: 3px;
+}
+
+.my-name{
+    margin-top: 20%;
+    text-align: center;
+}
+
+.my-media{
+    text-align: center;
+    font-style: italic;
+}
