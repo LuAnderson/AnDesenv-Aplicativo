@@ -22,7 +22,7 @@
     top: 8%;
     /* width: 71px; */
     -webkit-transform-origin: 50% 100%;
-    nsform-origin: 50% 100%;
+    transform-origin: 50% 100%;
     margin-left: 33%;
     margin-right: 33%;
     width: 34%;
@@ -35,7 +35,7 @@
     left: calc(50% - 1.6em);
     font-size: 2em;
     cursor: text;
-  }
+}
 
 .drop {
     height: 120px;
@@ -52,11 +52,18 @@
 }
 
 .my-name{
-    margin-top: 20%;
+    margin-top: 17%;
     text-align: center;
 }
 
 .my-media{
     text-align: center;
     font-style: italic;
+}
+
+.text{
+    text-align: center;
+    padding: 30px;
+    font-size: 15px;
+    padding-top: 1%;
 }
