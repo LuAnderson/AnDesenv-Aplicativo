@@ -1,0 +1,8 @@
+{
+  "name": "AnDesenv",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
