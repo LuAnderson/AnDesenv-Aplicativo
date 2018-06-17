@@ -8,3 +8,34 @@
         color: #ffffff;
     }
 }
+
+ion-app.md [padding] .scroll-content {
+    padding: 0px;
+}
+
+.ion-page ion-slides {
+    height: 25%;
+}
+
+.ion-page .tabbar{
+    height: 8%;
+}
+
+.ion-page ion-title{
+    width: 100%;
+}
+
+.bar-buttons.bar-buttons-md{
+    order: 1;
+}
+
+.ion-page .contact.bar-buttons.bar-buttons-md{
+    order: 1;
+}
+.ion-page .search.bar-buttons.bar-buttons-md{
+    order: 4;
+}
+
+.ion-page .bar-button-md[icon-only] ion-icon{
+    color: #d8d3d3
+}
