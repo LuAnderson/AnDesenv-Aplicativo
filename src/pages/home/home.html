@@ -19,16 +19,50 @@
   <ion-slides pager>
 
     <ion-slide style="background-color: green">
-      <h2>Slide 1</h2>
+      <h2>Primeiro Slide</h2>
     </ion-slide>
 
     <ion-slide style="background-color: blue">
-      <h2>Slide 2</h2>
+      <h2>Segundo Slide</h2>
     </ion-slide>
 
     <ion-slide style="background-color: red">
-      <h2>Slide 3</h2>
+      <h2>Terceiro Slide</h2>
     </ion-slide>
-
   </ion-slides>
+
+  <div padding>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="front">
+        Front-End
+      </ion-segment-button>
+      <ion-segment-button value="back">
+        Back-End
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'front'">
+      <ion-item>
+        <h2>HTML</h2>
+        <h2>CSS</h2>
+        <h2>JS</h2>
+        <h2>AngularJS</h2>
+        <h2>TypeScript</h2>
+        <h2>Less</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'back'">
+      <ion-item>
+        <h2>Java</h2>
+        <h2>C++</h2>
+        <h2>C</h2>
+        <h2>NODE</h2>
+
+      </ion-item>
+    </ion-list>
+  </div>
+
 </ion-content>
