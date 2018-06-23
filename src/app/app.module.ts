@@ -5,13 +5,13 @@ import { AnDesenv } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
 import { ChatPage } from '../pages/chat/chat';
-
+import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { SharedPage } from '../pages/shared/shared';
 
 @NgModule({
   declarations: [
@@ -20,6 +20,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
+    SharedPage,
     ChatPage
   ],
   imports: [
@@ -33,6 +34,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     ChatPage,
+    SharedPage,
     TabsPage
   ],
   providers: [
