@@ -18,7 +18,7 @@ ion-app.md [padding] .scroll-content {
 }
 
 .ion-page .tabbar{
-    height: 8%;
+    height: 7%;
 }
 
 .ion-page ion-title{
@@ -42,4 +42,10 @@ ion-app.md [padding] .scroll-content {
 
 .ion-page .fab-md-dark{
     background-color: rgba(60, 60, 60, 0.7);
+}
+
+.ion-page .tabs-md .tab-button[aria-selected=false]{
+    .tab-button-text{
+    display: none;
+    }
 }
