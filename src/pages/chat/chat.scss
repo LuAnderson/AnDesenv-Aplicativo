@@ -15,7 +15,8 @@
     height: 50px;
     width: 100%;
     z-index: 2;
-    margin-top: 110%;
+    bottom: 0%;
+    position: absolute;
 }
 
 .zmdi-camera:before {
@@ -128,3 +129,4 @@ input, textarea, select, button {
 .zmdi-mail-send:before {
     content: '\f194';
 }
+

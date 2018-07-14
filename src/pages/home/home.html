@@ -17,52 +17,74 @@
 <ion-content padding>
 
   <ion-slides pager>
-
-    <ion-slide style="background-color: green">
+    <ion-slide>
       <h2>Primeiro Slide</h2>
     </ion-slide>
 
-    <ion-slide style="background-color: blue">
+    <ion-slide>
       <h2>Segundo Slide</h2>
     </ion-slide>
 
-    <ion-slide style="background-color: red">
+    <ion-slide>
       <h2>Terceiro Slide</h2>
     </ion-slide>
   </ion-slides>
 
-  <!-- <div padding>
-    <ion-segment [(ngModel)]="pet">
-      <ion-segment-button value="front">
-        Front-End
+  <div padding>
+    <ion-segment [(ngModel)]="menuText">
+      <ion-segment-button value="Summary">
+        Summary
       </ion-segment-button>
-      <ion-segment-button value="back">
-        Back-End
+      <ion-segment-button value="Formation">
+        Formation
+      </ion-segment-button>
+      <ion-segment-button value="Experience">
+        Experience
+      </ion-segment-button>
+      <ion-segment-button value="Projects">
+        Projects
+      </ion-segment-button>
+      <ion-segment-button value="Courses">
+        Courses
       </ion-segment-button>
     </ion-segment>
-  </div> -->
+  </div>
 
-  <!-- <div [ngSwitch]="pet">
-    <ion-list *ngSwitchCase="'front'">
+  <div [ngSwitch]="menuText">
+    <ion-list *ngSwitchCase="'Summary'">
+      <p class="resumo">
+        Olá, sou o Lucas Anderson, sou Desenvolvedor Front End JR, tenho 22 anos de idade e este é o meu primeiro aplicativo; Seja
+        Bem Vindo !!!
+      </p>
+    </ion-list>
+    <ion-list *ngSwitchCase="'Formation'">
       <ion-item>
-        <h2>HTML</h2>
-        <h2>CSS</h2>
-        <h2>JS</h2>
-        <h2>AngularJS</h2>
-        <h2>TypeScript</h2>
-        <h2>Less</h2>
+        <h2>Formation</h2>
       </ion-item>
     </ion-list>
-
-    <ion-list *ngSwitchCase="'back'">
+    <ion-list *ngSwitchCase="'Experience'">
       <ion-item>
-        <h2>Java</h2>
-        <h2>C++</h2>
-        <h2>C</h2>
-        <h2>NODE</h2>
-
+        <h2>Experience</h2>
       </ion-item>
     </ion-list>
-  </div> -->
+    <ion-list *ngSwitchCase="'Projects'">
+      <ion-item>
+        <h2>Projects</h2>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'Courses'">
+      <ion-item>
+        <h2>Courses</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div padding>
+    <div class="bar front expert" data-skill="HTML5"></div>
+    <div class="bar front advanced" data-skill="CSS3"></div>
+    <div class="bar back intermediate" data-skill="JS"></div>
+    <div class="bar back basic" data-skill="IONIC"></div>
+    <div class="bar learning" data-skill="TS"></div>
+  </div>
 
 </ion-content>

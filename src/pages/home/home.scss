@@ -46,6 +46,95 @@ ion-app.md [padding] .scroll-content {
 
 .ion-page .tabs-md .tab-button[aria-selected=false]{
     .tab-button-text{
-    display: none;
+        display: none;
     }
 }
+
+.ion-page .segment-md .segment-button {
+    font-size: 11px;
+    padding: 0px;
+    line-height: 3rem;
+}
+
+.ion-page .primeiro-slide{
+    background-image: url("http://jotateles.com.br/images/minified/posts/alemdohtmlecss/htmlcssjavascriptgithub.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.resumo{
+    padding: 0 16px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+  }
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+  .bar{
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: #cdcace;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar.front::before{
+    background-color: #968b8e;
+  }
+  .bar.back::before{
+    background-color: #c1c1c1;
+  }
+  
+  .bar.learning::before{
+    width: calc(20% - 10px);
+  }
+  .bar.basic::before{
+    width: calc(40% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(60% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(80% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(90% - 10px);
+  }
+  
