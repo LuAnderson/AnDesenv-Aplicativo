@@ -33,19 +33,19 @@
   <div padding>
     <ion-segment [(ngModel)]="menuText">
       <ion-segment-button value="Summary">
-        Summary
+        Resumo
       </ion-segment-button>
       <ion-segment-button value="Formation">
-        Formation
+        Formação
       </ion-segment-button>
       <ion-segment-button value="Experience">
-        Experience
-      </ion-segment-button>
-      <ion-segment-button value="Projects">
-        Projects
+        Experiência
       </ion-segment-button>
       <ion-segment-button value="Courses">
-        Courses
+        Cursos
+      </ion-segment-button>
+      <ion-segment-button value="Contacto">
+        Contato
       </ion-segment-button>
     </ion-segment>
   </div>
@@ -58,24 +58,24 @@
       </p>
     </ion-list>
     <ion-list *ngSwitchCase="'Formation'">
-      <ion-item>
-        <h2>Formation</h2>
-      </ion-item>
+      <p class="resumo">
+        Engenharia da Computação - Universidade Estudual de Feira de Santana (UEFS) - Bahia - Brasil
+      </p>
     </ion-list>
     <ion-list *ngSwitchCase="'Experience'">
-      <ion-item>
-        <h2>Experience</h2>
-      </ion-item>
-    </ion-list>
-    <ion-list *ngSwitchCase="'Projects'">
-      <ion-item>
-        <h2>Projects</h2>
-      </ion-item>
+      <p class="resumo">
+        Desenvolvedor Front-End Junior - 1 ano e 6 meses - MedGrupo - Rio de Janeiro
+      </p>
     </ion-list>
     <ion-list *ngSwitchCase="'Courses'">
-      <ion-item>
-        <h2>Courses</h2>
-      </ion-item>
+      <p class="resumo">
+        Cursos
+      </p>
+    </ion-list>
+    <ion-list *ngSwitchCase="'Contacto'">
+      <p class="resumo">
+        Contato
+      </p>
     </ion-list>
   </div>
 
@@ -84,6 +84,7 @@
     <div class="bar front advanced" data-skill="CSS3"></div>
     <div class="bar back intermediate" data-skill="JS"></div>
     <div class="bar back basic" data-skill="IONIC"></div>
+    <div class="bar medium" data-skill="SEO"></div>
     <div class="bar learning" data-skill="TS"></div>
   </div>
 

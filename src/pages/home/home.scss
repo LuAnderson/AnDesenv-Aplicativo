@@ -2,7 +2,7 @@
     text-align: center;
 
     .toolbar-background-md{
-        background: #0a0923;
+        background: #404042;
     }
     .toolbar-title-md{
         color: #ffffff;
@@ -53,9 +53,12 @@ ion-app.md [padding] .scroll-content {
 .ion-page .segment-md .segment-button {
     font-size: 11px;
     padding: 0px;
+    color: #404042;
     line-height: 3rem;
 }
-
+.ion-page .segment-button .segment-activated{
+    color: blue;
+}
 .ion-page .primeiro-slide{
     background-image: url("http://jotateles.com.br/images/minified/posts/alemdohtmlecss/htmlcssjavascriptgithub.png");
     background-repeat: no-repeat;
@@ -70,26 +73,26 @@ ion-app.md [padding] .scroll-content {
 
 .container{
     width: 50%;
-    margin: 0 auto;
+    margin: 12 auto;
   }
   @keyframes load{
     from {
-      width: 0%
+      width: 12%
     }
   }
   @-webkit-keyframes load{
     from {
-      width: 0%
+      width: 12%
     }
   }
   @-moz-keyframes load{
     from {
-      width: 0%
+      width: 12%
     }
   }
   @-o-keyframes load{
     from {
-      width: 0%
+      width: 12%
     }
   }
   
@@ -126,7 +129,7 @@ ion-app.md [padding] .scroll-content {
     width: calc(20% - 10px);
   }
   .bar.basic::before{
-    width: calc(40% - 10px);
+    width: calc(55% - 10px);
   }
   .bar.intermediate::before{
     width: calc(60% - 10px);
@@ -136,5 +139,8 @@ ion-app.md [padding] .scroll-content {
   }
   .bar.expert::before{
     width: calc(90% - 10px);
+  }
+  .bar.medium::before{
+    width: calc(40% - 10px);
   }
   
