@@ -32,7 +32,7 @@
 
   <div padding>
     <ion-segment [(ngModel)]="menuText">
-      <ion-segment-button value="Summary">
+      <ion-segment-button value="Summary" id="resumo"> 
         Resumo
       </ion-segment-button>
       <ion-segment-button value="Formation">
@@ -74,30 +74,39 @@
     </ion-list>
     <ion-list *ngSwitchCase="'Contacto'">
       <p class="resumo">
-        Contato
+        lucasand96@gmail.com
       </p>
     </ion-list>
   </div>
 
-  <div padding>
-    <h5>
-      Conhecimentos Front-End:
-    </h5>
-    <div class="bar front expert" data-skill="HTML5"></div>
-    <div class="bar front advanced" data-skill="CSS3"></div>
-    <div class="bar back intermediate" data-skill="JS"></div>
-    <div class="bar back basic" data-skill="IONIC"></div>
-    <div class="bar medium" data-skill="SEO"></div>
-    <div class="bar learning" data-skill="TS"></div>
-  </div>
 
-  <div padding>
-    <h5>
+  <ion-card>
+    <ion-card-header>
+      Conhecimentos Front-End:
+    </ion-card-header>
+
+    <ion-card-content>
+      <div>
+        <div class="bar front expert" data-skill="HTML5"></div>
+        <div class="bar front advanced" data-skill="CSS3"></div>
+        <div class="bar back intermediate" data-skill="JS"></div>
+        <div class="bar back basic" data-skill="IONIC"></div>
+        <div class="bar medium" data-skill="SEO"></div>
+        <div class="bar learning" data-skill="TS"></div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
       Conhecimentos Back-End:
-    </h5>
-    <div class="bar front expert" data-skill="JAVA"></div>
-    <div class="bar front advanced" data-skill="C"></div>
-    <div class="bar back intermediate" data-skill="C#"></div>
-  </div>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="bar front expert" data-skill="JAVA"></div>
+      <div class="bar front advanced" data-skill="C"></div>
+      <div class="bar back intermediate" data-skill="C#"></div>
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
