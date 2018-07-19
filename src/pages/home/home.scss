@@ -71,6 +71,10 @@ ion-app.md [padding] .scroll-content {
     margin-top: 0px;
 }
 
+.tabs-md[tabsLayout=icon-top] .has-icon .tab-button-text{
+  margin-top: 0px;
+}
+
 .container{
     width: 50%;
     margin: 12 auto;

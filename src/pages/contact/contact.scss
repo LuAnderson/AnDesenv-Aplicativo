@@ -3,4 +3,138 @@ page-contact {
         text-align: center;
         font-style: italic; 
     }
+
+    
+    $timeline--background: red;
+    $timeline--text: black;
+
+    *, *::before, *::after {
+    box-sizing: border-box;
+    }
+
+    h1,
+    h2,
+    h3 {
+    font-family: 'IBM Plex Serif', sans-serif;
+    font-weight: 300;
+    }
+
+    p {
+    margin: 0 0 1em;
+    }
+
+    .m-content {
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    
+    h2 {
+        font-size: 2.2rem;
+        line-height: 1.3em;
+        margin: 1em 0 .2em;
+    }
+    }
+
+    .m-timeline {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    color: $timeline--text;
+    margin: 48px 0;
+        
+    li {
+        position: relative;
+        padding: 10px 0 20px 50px;
+        transition: all 100ms;
+        
+        &::before,
+        &::after {
+        transition: all 100ms;
+        }
+        
+        &::before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 0;
+        z-index: 2;
+        background-color: #ff1515;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: 5px solid gray;
+        }
+        
+        &::after {
+        content: '';
+        display: block;
+        width: 1px;
+        background-color: #000000;
+        position: absolute;
+        top: 0;
+        left: 12px;
+        height: 100%;
+        z-index: 1;      
+        }
+        
+        &:first-child::after {
+        top: 15px;
+        }
+        
+        &:last-child::after {
+        height: 15px;
+        }
+    }
+    
+    &__date {
+        font-size: .8em;
+        margin: 0 0 .3em;
+        color: black;
+    }
+    
+    p {
+        margin: 0 0 .5em;
+    }
+    
+    @media (min-width: 800px) {
+            li {
+            &:nth-child(odd) {
+                text-align: right;
+                padding-left: 0;
+                padding-right: calc(50% + 50px);
+            }
+            
+            &:nth-child(even) {
+                padding-left: calc(50% + 20px);
+            }
+            
+            &::before {
+                left: calc(50% - 25px);
+            }
+            
+            &::after {
+                left: calc(50% - 13px);
+            }
+            }
+        }
+    }
+
+    li.curso::before{
+        background-color: green;
+    }
+    li.profissional::before{
+        background-color: #2e4990;
+    }
+    li.pessoal::before{
+        background-color: red;
+    }
+    li.ensino::before{
+        background-color: black;
+    }
+    li.eventos::before{
+        background-color: yellow;
+    }
 }
